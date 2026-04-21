@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FitZone" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fitzone_primary</item>
+        <item name="colorOnPrimary">@color/fitzone_on_primary</item>
+        <item name="colorPrimaryContainer">@color/fitzone_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/fitzone_on_primary_container</item>
+
+        <item name="colorSecondary">@color/fitzone_accent</item>
+        <item name="colorOnSecondary">@color/fitzone_on_accent</item>
+        <item name="colorSecondaryContainer">@color/fitzone_accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/fitzone_on_accent_container</item>
+        <item name="colorTertiary">@color/fitzone_accent</item>
+        <item name="colorOnTertiary">@color/fitzone_on_accent</item>
+
+        <item name="android:colorBackground">@color/fitzone_background</item>
+        <item name="colorSurface">@color/fitzone_surface</item>
+        <item name="colorSurfaceVariant">@color/fitzone_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/fitzone_card_background</item>
+        <item name="colorOutline">@color/fitzone_outline</item>
+        <item name="colorOnBackground">@color/fitzone_on_background</item>
+        <item name="colorOnSurface">@color/fitzone_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/fitzone_on_surface_variant</item>
+
+        <item name="android:windowBackground">@color/fitzone_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/fitzone_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowAnimationStyle">@style/Animation.FitZone.Window</item>
+
+        <item name="cardViewStyle">@style/Widget.FitZone.Card</item>
+        <item name="materialCardViewStyle">@style/Widget.FitZone.MaterialCard</item>
+        <item name="materialButtonStyle">@style/Widget.FitZone.PrimaryButton</item>
+        <item name="textInputStyle">@style/Widget.FitZone.OutlinedInput</item>
+    </style>
+
+    <style name="Theme.FitZone" parent="Base.Theme.FitZone" />
+</resources>

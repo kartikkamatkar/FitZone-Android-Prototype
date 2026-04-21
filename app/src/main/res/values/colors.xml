@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fitzone_primary">#6A0DAD</color>
+    <color name="fitzone_primary_dark">#4E0786</color>
+    <color name="fitzone_on_primary">#FFFFFFFF</color>
+    <color name="fitzone_primary_container">#E9D8F7</color>
+    <color name="fitzone_on_primary_container">#2E0A4A</color>
+
+    <color name="fitzone_accent">#FFD700</color>
+    <color name="fitzone_on_accent">#1F1A00</color>
+    <color name="fitzone_accent_container">#FFF4BF</color>
+    <color name="fitzone_on_accent_container">#3D3100</color>
+
+    <color name="fitzone_background">#FFF5F5F5</color>
+    <color name="fitzone_surface">#FFFFFFFF</color>
+    <color name="fitzone_card_background">#FFFFFFFF</color>
+    <color name="fitzone_surface_variant">#FFEAEAEA</color>
+
+    <color name="fitzone_logo_background_dark">#FF0C0914</color>
+    <color name="fitzone_logo_background_mid">#FF1B1230</color>
+    <color name="fitzone_logo_glow_purple">#336A0DAD</color>
+    <color name="fitzone_logo_glow_yellow">#26FFD700</color>
+    <color name="fitzone_logo_monochrome">#FFF8F4FF</color>
+
+    <color name="fitzone_on_background">#FF1F1B24</color>
+    <color name="fitzone_on_surface">#FF1F1B24</color>
+    <color name="fitzone_on_surface_variant">#FF5F5A66</color>
+
+    <color name="fitzone_outline">#FFD8D2DD</color>
+    <color name="fitzone_card_stroke">#FFE6E0EB</color>
+    <color name="fitzone_shadow">#14000000</color>
+    <color name="fitzone_bottom_nav_selected_bg">#FFD700</color>
+    <color name="fitzone_bottom_nav_selected_icon">#6A0DAD</color>
+    <color name="fitzone_bottom_nav_unselected_icon">#B36A0DAD</color>
+    <color name="fitzone_bottom_nav_selected_text">#6A0DAD</color>
+    <color name="fitzone_bottom_nav_unselected_text">#996A0DAD</color>
+    <color name="fitzone_chat_user_bubble">#6A0DAD</color>
+    <color name="fitzone_chat_user_bubble_end">#8A35D3</color>
+    <color name="fitzone_chat_bot_bubble">#FFFFFFFF</color>
+    <color name="fitzone_chat_input_background">#FFF8F6FB</color>
+    <color name="fitzone_chat_header_background">#FFF5EEFB</color>
+    <color name="fitzone_chat_avatar_background">#FFEAD8F8</color>
+    <color name="fitzone_online">#1BAA62</color>
+</resources>

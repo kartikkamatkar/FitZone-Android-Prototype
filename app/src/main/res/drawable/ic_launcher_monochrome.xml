@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="@color/fitzone_logo_monochrome"
+        android:pathData="M54,20C48,27.15 45.24,33.36 46.11,39.93C46.88,45.69 50.19,50.32 54,53.97C57.81,50.32 61.12,45.69 61.89,39.93C62.76,33.36 60,27.15 54,20Z" />
+
+    <path
+        android:fillColor="@color/fitzone_logo_monochrome"
+        android:pathData="M22,53C22,50.79 23.79,49 26,49H29C31.21,49 33,50.79 33,53V73C33,75.21 31.21,77 29,77H26C23.79,77 22,75.21 22,73V53ZM35,50C35,48.34 36.34,47 38,47H41C42.66,47 44,48.34 44,50V76C44,77.66 42.66,79 41,79H38C36.34,79 35,77.66 35,76V50ZM46,59C46,57.34 47.34,56 49,56H60C61.66,56 63,57.34 63,59V67C63,68.66 61.66,70 60,70H49C47.34,70 46,68.66 46,67V59ZM65,50C65,48.34 66.34,47 68,47H71C72.66,47 74,48.34 74,50V76C74,77.66 72.66,79 71,79H68C66.34,79 65,77.66 65,76V50ZM76,53C76,50.79 77.79,49 80,49H83C85.21,49 87,50.79 87,53V73C87,75.21 85.21,77 83,77H80C77.79,77 76,75.21 76,73V53Z" />
+</vector>
+

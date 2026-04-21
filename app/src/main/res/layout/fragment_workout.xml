@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitzone_background"
+    android:orientation="vertical">
+
+
+
+    <!-- Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:background="@color/fitzone_background"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="0dp">
+
+        <!-- Workout Header Card - Modernized -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/workoutHeaderCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/fitzone_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/workoutHeaderTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_header_title"
+                    android:textColor="@color/fitzone_on_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="-0.01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/workoutHeaderSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/workout_subtitle"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/workoutHeaderTitle" />
+
+                <!-- Progress Section - Modernized layout -->
+                <LinearLayout
+                    android:id="@+id/progressSection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/workoutHeaderSubtitle">
+
+                    <!-- Progress Labels Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/workoutCompletionText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/workout_today_completion"
+                            android:textColor="@color/fitzone_on_primary"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:id="@+id/workoutCompletionPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/workout_completion_percent"
+                            android:textColor="@color/fitzone_accent"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black" />
+                    </LinearLayout>
+
+                    <!-- Progress Bar - Enhanced styling -->
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/workoutCompletionProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="6dp"
+                        android:max="100"
+                        android:progress="68"
+                        app:indicatorColor="@color/fitzone_accent"
+                        app:trackColor="#55FFFFFF"
+                        app:trackCornerRadius="4dp"
+                        app:trackThickness="8dp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category Filter Section - Modernized with standard colors -->
+        <HorizontalScrollView
+            android:id="@+id/categoryScroll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="4dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/workoutHeaderCard">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="8dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAll"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:checked="true"
+                    android:text="@string/workout_category_all"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipChest"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_chest"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAbs"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_abs"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLegs"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_legs"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipArms"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_arms"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipBack"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_back"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCardio"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_cardio"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipRecovery"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/workout_category_recovery"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    app:chipBackgroundColor="@color/fitzone_surface"
+                    app:chipCornerRadius="18dp"
+                    app:chipStrokeWidth="1dp"
+                    app:chipStrokeColor="@color/fitzone_outline"
+                    app:chipIconVisible="false"
+                    app:chipMinHeight="36dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <!-- Workout List - Improved spacing -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/workoutRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/layout_fade_in"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp"
+            android:paddingHorizontal="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryScroll"
+            tools:listitem="@layout/item_workout_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

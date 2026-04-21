@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="@color/fitzone_logo_glow_purple"
+        android:pathData="M23,39C23,26.85 32.85,17 45,17C57.15,17 67,26.85 67,39C67,51.15 57.15,61 45,61C32.85,61 23,51.15 23,39Z" />
+
+    <path
+        android:fillColor="@color/fitzone_logo_glow_yellow"
+        android:pathData="M57,35C57,25.61 64.61,18 74,18C83.39,18 91,25.61 91,35C91,44.39 83.39,52 74,52C64.61,52 57,44.39 57,35Z" />
+
+    <path
+        android:fillColor="#14000000"
+        android:pathData="M24,80C31.6,75.2 41.4,72.8 54,72.8C66.6,72.8 76.4,75.2 84,80C76.2,84 66.2,86 54,86C41.8,86 31.8,84 24,80Z" />
+
+    <path android:pathData="M54,18C47.2,25.6 44,33 45,40.8C45.9,48.2 50.2,53.9 54,57.4C57.8,53.9 62.1,48.2 63,40.8C64,33 60.8,25.6 54,18Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="44"
+                android:startY="20"
+                android:endX="64"
+                android:endY="58"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:fillColor="#4DFFF6BF"
+        android:pathData="M54,29C49.9,34 48.3,38.8 49.2,43.2C49.9,46.9 52.1,49.7 54,51.6C56.1,49.6 58.3,46.7 58.8,42.9C59.4,38.4 57.8,33.7 54,29Z" />
+
+    <path
+        android:fillColor="#10000000"
+        android:pathData="M21,54C21,51.79 22.79,50 25,50H29C31.21,50 33,51.79 33,54V74C33,76.21 31.21,78 29,78H25C22.79,78 21,76.21 21,74V54ZM35,51C35,49.34 36.34,48 38,48H41C42.66,48 44,49.34 44,51V77C44,78.66 42.66,80 41,80H38C36.34,80 35,78.66 35,77V51ZM46,60C46,58.34 47.34,57 49,57H61C62.66,57 64,58.34 64,60V68C64,69.66 62.66,71 61,71H49C47.34,71 46,69.66 46,68V60ZM66,51C66,49.34 67.34,48 69,48H72C73.66,48 75,49.34 75,51V77C75,78.66 73.66,80 72,80H69C67.34,80 66,78.66 66,77V51ZM77,54C77,51.79 78.79,50 81,50H85C87.21,50 89,51.79 89,54V74C89,76.21 87.21,78 85,78H81C78.79,78 77,76.21 77,74V54Z" />
+
+    <path android:pathData="M20,53C20,50.79 21.79,49 24,49H28C30.21,49 32,50.79 32,53V73C32,75.21 30.21,77 28,77H24C21.79,77 20,75.21 20,73V53Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20"
+                android:startY="48"
+                android:endX="89"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path android:pathData="M34,50C34,48.34 35.34,47 37,47H40C41.66,47 43,48.34 43,50V76C43,77.66 41.66,79 40,79H37C35.34,79 34,77.66 34,76V50Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20"
+                android:startY="48"
+                android:endX="89"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path android:pathData="M45,59C45,57.34 46.34,56 48,56H60C61.66,56 63,57.34 63,59V67C63,68.66 61.66,70 60,70H48C46.34,70 45,68.66 45,67V59Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20"
+                android:startY="48"
+                android:endX="89"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path android:pathData="M65,50C65,48.34 66.34,47 68,47H71C72.66,47 74,48.34 74,50V76C74,77.66 72.66,79 71,79H68C66.34,79 65,77.66 65,76V50Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20"
+                android:startY="48"
+                android:endX="89"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path android:pathData="M76,53C76,50.79 77.79,49 80,49H84C86.21,49 88,50.79 88,53V73C88,75.21 86.21,77 84,77H80C77.79,77 76,75.21 76,73V53Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="20"
+                android:startY="48"
+                android:endX="89"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="@color/fitzone_primary"
+                    android:offset="0" />
+                <item
+                    android:color="@color/fitzone_accent"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M38,51C38.55,51 39,51.45 39,52V74C39,74.55 38.55,75 38,75C37.45,75 37,74.55 37,74V52C37,51.45 37.45,51 38,51Z" />
+
+    <path
+        android:fillColor="#26FFFFFF"
+        android:pathData="M69,51C69.55,51 70,51.45 70,52V74C70,74.55 69.55,75 69,75C68.45,75 68,74.55 68,74V52C68,51.45 68.45,51 69,51Z" />
+</vector>
+

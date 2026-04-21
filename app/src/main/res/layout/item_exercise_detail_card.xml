@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Number Badge - Modernized -->
+        <TextView
+            android:id="@+id/exerciseNumber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_chat_avatar"
+            android:gravity="center"
+            android:text="@string/workout_detail_number_default"
+            android:textColor="@color/fitzone_on_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Exercise Name - Enhanced typography -->
+        <TextView
+            android:id="@+id/exerciseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/workout_detail_name_default"
+            android:textColor="@color/fitzone_on_surface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="-0.01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/exerciseNumber"
+            app:layout_constraintTop_toTopOf="@id/exerciseNumber"
+            app:layout_constraintBottom_toTopOf="@id/exerciseSetsReps" />
+
+        <!-- Sets × Reps - Improved emphasis -->
+        <TextView
+            android:id="@+id/exerciseSetsReps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/workout_detail_sets_reps_default"
+            android:textColor="@color/fitzone_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="@id/exerciseName"
+            app:layout_constraintStart_toStartOf="@id/exerciseName"
+            app:layout_constraintTop_toBottomOf="@id/exerciseName" />
+
+        <!-- Muscles - Improved readability -->
+        <TextView
+            android:id="@+id/exerciseMuscles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/workout_detail_muscles_default"
+            android:textColor="@color/fitzone_on_surface"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exerciseSetsReps" />
+
+        <!-- Tip - Improved readability -->
+        <TextView
+            android:id="@+id/exerciseTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/workout_detail_tip_default"
+            android:textColor="@color/fitzone_on_surface_variant"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:background="@color/fitzone_surface"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exerciseMuscles" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
